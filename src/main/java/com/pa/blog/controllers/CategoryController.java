@@ -34,9 +34,9 @@ public class CategoryController {
 		CategoryDto createCategory = this.categoryServiceI.createCategory(cateoDto);
 		return new ResponseEntity<CategoryDto>(createCategory,HttpStatus.CREATED);
 		
-	}
+}
 	
-	//update
+	//update on date 080224
 	
 	@PutMapping("/{catId}")
 	public ResponseEntity<CategoryDto> updateCategory(@Valid @RequestBody CategoryDto categoryDto,@PathVariable Integer catId){
